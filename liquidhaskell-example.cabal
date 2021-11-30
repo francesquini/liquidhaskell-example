@@ -1,0 +1,27 @@
+cabal-version: 1.12
+-- Arquivo baseado no tutorial por Ranjit Jhala
+
+name:           liquidhaskell-example
+version:        0.2.0.0
+category:       Web
+homepage:       http://example.com
+author:         Emilio Francesquini
+maintainer:     e.francesquini@ufabc.edu.br
+copyright:      Emilio Francesquini
+license:        MIT
+license-file:   LICENSE
+build-type:     Simple
+
+library
+  exposed-modules:
+      Main
+  hs-source-dirs:
+      src
+  ghc-options: -fdefer-type-errors -fplugin=LiquidHaskell
+  build-depends:
+      liquid-base
+    , liquid-bytestring
+    , liquid-containers
+    , liquid-vector
+    , liquidhaskell
+  default-language: Haskell2010

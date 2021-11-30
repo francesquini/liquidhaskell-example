@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+<head>
+<title>src/Main.hs</title>
+</head>
+<head>
+<link type='text/css' rel='stylesheet' href='liquid.css' />
+</head>
+
+<body>
+<hr>
+Put mouse over identifiers to see inferred types
+<pre><span class=hs-linenum> 1: </span><a class=annot href="#"><span class=annottext>{VV##698 : GHC.Types.Module | $k_##699}</span><span class='hs-keyword'>module</span></a> <span class='hs-conid'>Main</span> <span class='hs-keyword'>where</span>
+<span class=hs-linenum> 2: </span>
+<span class=hs-linenum> 3: </span><span class='hs-keyword'>{-@</span> <span class='hs-varid'>bar</span> <span class='hs-keyglyph'>::</span> <span class='hs-keyword'>{n:</span> <span class='hs-conid'>Int</span> <span class='hs-keyword'>| n &gt; 10}</span> <span class='hs-keyglyph'>-&gt;</span> <span class='hs-conid'>String</span> <span class='hs-keyword'>@-}</span>
+<span class=hs-linenum> 4: </span><span class='hs-definition'>bar</span> <span class='hs-keyglyph'>::</span> <span class='hs-conid'>Int</span> <span class='hs-keyglyph'>-&gt;</span> <span class='hs-conid'>String</span>
+<span class=hs-linenum> 5: </span><a class=annot href="#"><span class=annottext>lq_tmp$x##443:{n : GHC.Types.Int | n &gt; 10} -&gt; [GHC.Types.Char]</span><span class='hs-definition'>bar</span></a> <a class=annot href="#"><span class=annottext>{n : GHC.Types.Int | n &gt; 10}</span><span class='hs-varid'>n</span></a> <span class='hs-keyglyph'>=</span> <a class=annot href="#"><span class=annottext>[GHC.Types.Char]</span><span class='hs-varid'>show</span></a> <a class=annot href="#"><span class=annottext>{lq_tmp$x##461 : GHC.Types.Int | lq_tmp$x##461 &gt; 10
+                                 &amp;&amp; lq_tmp$x##461 == n##a1Rk}</span><span class='hs-varid'>n</span></a> <span class='hs-varop'>++</span> <a class=annot href="#"><span class=annottext>{lq_tmp$x##469 : [GHC.Types.Char] | lq_tmp$x##469 ~~ lq_anf$##7205759403792803750##d2DI
+                                    &amp;&amp; len lq_tmp$x##469 == strLen lq_anf$##7205759403792803750##d2DI}</span><span class='hs-str'>" is a large number!"</span></a> <span class='hs-comment'>-- Here n is guaranteed &gt; 10</span>
+<span class=hs-linenum> 6: </span>
+<span class=hs-linenum> 7: </span><span class='hs-definition'>foo</span> <span class='hs-keyglyph'>::</span> <span class='hs-conid'>IO</span> <span class='hs-conid'>()</span>
+<span class=hs-linenum> 8: </span><a class=annot href="#"><span class=annottext>(GHC.Types.IO ())</span><span class='hs-definition'>foo</span></a> <span class='hs-keyglyph'>=</span> <span class='hs-keyword'>do</span> <a class=annot href="#"><span class=annottext>{lq_tmp$x##559 : GHC.Types.Int | $k_##558[VV##557:=lq_tmp$x##559][lq_tmp$x##542:=GHC.Base.$fFunctorIO][lq_tmp$x##543:=lq_anf$##7205759403792803752##d2DK][lq_tmp$x##544:=System.IO.getLine]}</span><span class='hs-varid'>x</span></a> <span class='hs-keyglyph'>&lt;-</span> <a class=annot href="#"><span class=annottext>lq_tmp$x##521:[GHC.Types.Char] -&gt; GHC.Types.Int</span><span class='hs-varid'>read</span></a> <span class='hs-varop'>&lt;$&gt;</span> <a class=annot href="#"><span class=annottext>{lq_tmp$x##575 : (GHC.Types.IO [GHC.Types.Char]) | lq_tmp$x##575 == System.IO.getLine}</span><span class='hs-varid'>getLine</span></a>
+<span class=hs-linenum> 9: </span>         <a class=annot href="#"><span class=annottext>lq_tmp$x##687:[GHC.Types.Char] -&gt; (GHC.Types.IO ())</span><span class='hs-varid'>putStrLn</span></a> <span class='hs-varop'>$</span> <a class=annot href="#"><span class=annottext>{VV##614 : [{VV##609 : GHC.Types.Char | $k_##610}]&lt;\lq_tmp$x##611 VV -&gt; {VV##612 : GHC.Types.Char | $k_##613}&gt; | $k_##615}</span><span class='hs-keyword'>if</span></a> <a class=annot href="#"><span class=annottext>{lq_tmp$x##606 : GHC.Types.Int | $k_##558[VV##557:=lq_tmp$x##606][lq_tmp$x##542:=GHC.Base.$fFunctorIO][lq_tmp$x##543:=lq_anf$##7205759403792803752##d2DK][lq_tmp$x##544:=System.IO.getLine][lq_tmp$x##559:=lq_tmp$x##606]
+                                 &amp;&amp; lq_tmp$x##606 == x##a1Rl}</span><span class='hs-varid'>x</span></a> <span class='hs-varop'>&gt;</span> <a class=annot href="#"><span class=annottext>{lq_tmp$x##585 : GHC.Types.Int | lq_tmp$x##585 == lq_anf$##7205759403792803753##d2DL}</span><span class='hs-num'>10</span></a> <span class='hs-keyword'>then</span> <a class=annot href="#"><span class=annottext>lq_tmp$x##645:{lq_tmp$x##639 : GHC.Types.Int | lq_tmp$x##639 &gt; 10} -&gt; [GHC.Types.Char]</span><span class='hs-varid'>bar</span></a> <a class=annot href="#"><span class=annottext>{lq_tmp$x##647 : GHC.Types.Int | $k_##558[VV##557:=lq_tmp$x##647][lq_tmp$x##542:=GHC.Base.$fFunctorIO][lq_tmp$x##543:=lq_anf$##7205759403792803752##d2DK][lq_tmp$x##544:=System.IO.getLine][lq_tmp$x##559:=lq_tmp$x##647]
+                                 &amp;&amp; lq_tmp$x##647 == x##a1Rl}</span><span class='hs-varid'>x</span></a> <span class='hs-keyword'>else</span> <a class=annot href="#"><span class=annottext>{lq_tmp$x##623 : GHC.Prim.Addr# | lq_tmp$x##623 == "erro!"}</span><span class='hs-str'>"erro!"</span></a>
+<span class=hs-linenum>10: </span>
+<span class=hs-linenum>11: </span>
+<span class=hs-linenum>12: </span><a class=annot href="#"><span class=annottext>(GHC.Types.IO ())</span><span class='hs-definition'>main</span></a> <span class='hs-keyglyph'>=</span> <span class='hs-varid'>foo</span>
+</pre>
+</body>
+</html>
